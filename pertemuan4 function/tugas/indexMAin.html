@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selamat Datang di Program Saya</h1>
+    <p>Pilih salah satu opsi di bawah ini untuk memulai:</p>
+
+    <!-- Input untuk pilihan -->
+    <label for="box1">Pilih opsi:</label>
+    <select id="box1">
+        <option value="">-- Pilih --</option>
+        <option value="1">Menghitung Luas</option>
+        <option value="2">Menghitung Gaji</option>
+    </select>
+    <button id="submit">Submit</button>
+
+    <!-- Form untuk memasukkan input -->
+    <div id="form-area" class="hidden">
+        <div id="form-content"></div>
+        <button id="calculate">Hitung</button>
+    </div>
+
+    <!-- Area untuk menampilkan output -->
+    <div id="output"></div>
+    <script src="jj.js"></script>
+</body>
+</html>
